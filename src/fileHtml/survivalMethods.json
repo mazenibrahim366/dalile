@@ -1,0 +1,85 @@
+[
+  {
+    "image": "./imgPh/WhatsApp Image 2025-04-23 at 4.49.43 PM.jpeg",
+    "name": "MrBeast",
+    "follow": "يوتيوب. 375 مليون، فيس بوك. 32 مليون، انستجرام. 67 مليون، تيك توك. 115 مليون",
+    "rate": 10,
+    "des": "واسمه الحقيقي جيمي دونالدسون، هو واحد من أشهر صانعي المحتوى على يوتيوب في العالم. اشتهر بتقديم مقاطع فيديو مليئة بالتحديات الغريبة، الجوائز المالية الضخمة، وأعمال الخير. أسلوبه يتميز بالإبداع، الإنتاج الضخم، وكرمه المبالغ فيه — زي إنه بيوزع ملايين الدولارات على مشتركين أو بيعمل مسابقات خرافية.",
+    "links": {
+      "facebook": "https://www.facebook.com/mrbeast/",
+      "yut": "https://www.youtube.com/@MrBeast",
+      "tiktok": "https://www.tiktok.com/@mrbeast",
+      "x": "https://x.com/MrBeast",
+      "ensta": "https://www.instagram.com/mrbeast/"
+    }
+  },
+  {
+    "image": "./imgPh/WhatsApp Image 2025-04-23 at 6.04.40 PM (1).jpeg",
+    "name": "Primitive Technology",
+    "follow": "يوتيوب. 10.8 مليون، انستجرام. 58.4 ألف",
+    "rate": 9,
+    "des": "قناة يوتيوب أسترالية تركز على بناء أدوات وملاجئ باستخدام المواد الطبيعية فقط. صاحب القناة جون بلانت، ويتميز محتواه بالهدوء والتركيز على المهارات البدائية.",
+    "links": {
+      "facebook": "",
+      "yut": "https://www.youtube.com/@primitivetechnology9550",
+      "tiktok": "",
+      "x": "",
+      "ensta": "https://www.instagram.com/primitive_technology/"
+    }
+  },
+  {
+    "image": "./imgPh/WhatsApp Image 2025-04-23 at 6.04.40 PM.jpeg",
+    "name": "survival lilly",
+    "follow": "يوتيوب. 1.16 مليون، فيس بوك. 371 ألف، تيك توك. 2.5 مليون",
+    "rate": 9,
+    "des": "صانعة محتوى نمساوية مشهورة على يوتيوب، متخصصة في مهارات البقاء في البرية والتخييم. بدأت قناتها في 2011، وقدرت تبني جمهور ضخم من الناس اللي بيحبوا المغامرات والحياة البدائية.",
+    "links": {
+      "facebook": "https://www.facebook.com/profile.php?id=61555473171751",
+      "yut": "https://www.youtube.com/@SurvivalLilly/videos",
+      "tiktok": "https://www.tiktok.com/@survival_lilly",
+      "x": "",
+      "ensta": ""
+    }
+  },
+  {
+    "image": "./imgPh/WhatsApp Image 2025-04-23 at 6.04.40 PM (2).jpeg",
+    "name": "مغامرات رجل البرية",
+    "follow": "يوتيوب. 100 ألف، فيس بوك. 41 ألف، انستجرام. 95.6 ألف",
+    "rate": 8,
+    "des": "قناة يوتيوب عربية مميزة لصاحبها 'عبد الله المالكي'، وتركز على المغامرات والتخييم ومهارات البقاء في الطبيعة، وخصوصًا في البيئة الصحراوية والجبلية في المملكة العربية السعودية.",
+    "links": {
+      "facebook": "https://www.facebook.com/profile.php?id=61556759829063",
+      "yut": "https://www.youtube.com/@%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A7%D8%AA_%D8%B1%D8%AC%D9%84_%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%A9",
+      "tiktok": "",
+      "x": "",
+      "ensta": "https://www.instagram.com/rg.b17/"
+    }
+  },
+  {
+    "image": "./imgPh/WhatsApp Image 2025-04-23 at 5.02.56 PM.jpeg",
+    "name": "Dereini | يزيد الدريني",
+    "follow": "يوتيوب. 351 ألف، انستجرام. 290 ألف",
+    "rate": 8,
+    "des": "من سطح البحر الأحمر السعودي إلى أعماقه مرورًا بكل المحيطات وبحار دول العالم. بوابتك إلى عالم ما تحت البحار.",
+    "links": {
+      "facebook": "",
+      "yut": "https://www.youtube.com/@dereinii",
+      "tiktok": "",
+      "x": "",
+      "ensta": "https://www.instagram.com/dereinii/"
+    }
+  },
+  {
+    "image": "./imgPh/WhatsApp Image 2025-04-23 at 3.26.51 PM.jpeg",
+    "name": "Bushcraft Police",
+    "follow": "يوتيوب. 541 ألف، فيس بوك. 146 ألف، انستجرام. 146 ألف",
+    "rate": 8,
+    "des": "انغمسوا في جمال بوليسيا الخلاب بينما نستكشف مهارات بوشكرافت التقليدية. تعلموا بناء الملاجئ، وإشعال النار، والبحث عن الطعام. لنعد إلى بساطة الطبيعة.",
+    "links": {
+      "facebook": "",
+      "yut": "https://www.youtube.com/@PolissyaBushcraft",
+      "tiktok": "https://www.tiktok.com/@polissya.bushcraft.real",
+      "x": "",
+      "ensta": "https://www.instagram.com/polissya_bushcraft/"
+    }
+  }]

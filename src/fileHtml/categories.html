@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="../all.min.css" rel="stylesheet">
+  <link href="../output.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+
+
+</head>
+<body>
+  
+<!--open section navbar -->
+<nav class="fixed z-50 w-full bg-white border-gray-200 dark:bg-gray-900">
+  <div class=" container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        
+        <span class="self-center text-2xl font-semibold whitespace-nowrap pe-2 dark:text-white">Dalile</span>
+    </a>
+    <button id="btnMenu" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div  class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="index.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+        </li>
+
+        <li>
+            <a href="categories.html"  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Categories</a>
+        </li>
+        <li>
+            <a href="blog.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+        </li>
+        <li>
+            <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--close section navbar -->
+
+<!--open section categories -->
+<section id="secCategories" class=" ">
+
+  
+
+
+  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="FoodReviewer-tab" data-tabs-target="#FoodReviewer" type="button" role="tab" aria-controls="FoodReviewer" aria-selected="false"> Food reviewer</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="clothes-tab" data-tabs-target="#clothes" type="button" role="tab" aria-controls="clothes" aria-selected="false">clothes</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Technology-tab" data-tabs-target="#Technology" type="button" role="tab" aria-controls="Technology" aria-selected="false">Technology</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="tripsAndTravel-tab" data-tabs-target="#tripsAndTravel" type="button" role="tab" aria-controls="tripsAndTravel" aria-selected="false">Trips and travel</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="survivalMethods-tab" data-tabs-target="#survivalMethods" type="button" role="tab" aria-controls="survivalMethods" aria-selected="false">Survival methods</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Cooking-tab" data-tabs-target="#Cooking" type="button" role="tab" aria-controls="Cooking" aria-selected="false">Cooking</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="doctors-tab" data-tabs-target="#doctors" type="button" role="tab" aria-controls="doctors" aria-selected="false">doctors</button>
+        </li>
+
+    </ul>
+</div>
+<div class="input-form-search">
+
+
+
+  <form class="max-w-lg mx-auto">
+    <div class="flex">
+        <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+        <div class="relative w-full">
+            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg  border-s-1 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search Influencer and content creator ..."  />
+            <span type="" class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+                <span class="sr-only">Search</span>
+            </span>
+          </div>
+        </div>
+        <ul id="results"></ul>
+</form>
+
+
+
+</div>
+<div id="default-tab-content">
+  
+    <div  class="hidden flex flex-wrap p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="FoodReviewer" role="tabpanel" aria-labelledby="FoodReviewer-tab">
+
+    </div>
+    <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="clothes" role="tabpanel" aria-labelledby="clothes-tab">
+
+    </div>
+    <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="Technology" role="tabpanel" aria-labelledby="Technology-tab">
+
+      </div>
+    <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="tripsAndTravel" role="tabpanel" aria-labelledby="tripsAndTravel-tab">
+
+      </div>
+    <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="survivalMethods" role="tabpanel" aria-labelledby="survivalMethods-tab">
+
+      </div>
+    <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="Cooking" role="tabpanel" aria-labelledby="Cooking-tab">
+
+      </div>
+    <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="doctors" role="tabpanel" aria-labelledby="doctors-tab">
+
+      </div>
+
+</div>
+
+
+
+
+
+</section>
+<!--close section categories -->
+<!--start section footer -->
+<section class="footer">
+  <div class="footer-img-links">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/?locale=ar_AR"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/?lang=ar"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.google.com.eg/?hl=ar"
+            ><i class="fa-brands fa-google"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <p>Copy Right 2025 © By <span>MazenDev</span> All Rights Reserved</p>
+
+</section>
+<!--close section footer -->
+<script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="../js.js"></script>
+</body>
+</html>

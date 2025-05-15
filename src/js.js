@@ -159,13 +159,13 @@ async function fetchJson(url) {
 
 async function getData() {
   const files = [
-    "foodRiv.json",
-    "technology.json",
-    "cooking.json",
-    "clothes.json",
-    "survivalMethods.json",
-    "data.json",
-    "travele.json"
+    "./foodRiv.json",
+    "./technology.json",
+    "./cooking.json",
+    "./clothes.json",
+    "./survivalMethods.json",
+    "./data.json",
+    "./travele.json"
   ];
 
   let allData = [];
@@ -242,13 +242,13 @@ getData()
 
 
 
-getJson(foodReviewer, "foodRiv.json");
-getJson(clothes, "clothes.json");
-getJson(technology, "technology.json");
-getJson(cooking, "cooking.json");
-getJson(survivalMethods, "survivalMethods.json");
-getJson(doctors, "doctor.json");
-getJson(tripsAndTravel, "travele.json");
+getJson(foodReviewer, "./foodRiv.json");
+getJson(clothes, "./clothes.json");
+getJson(technology, "./technology.json");
+getJson(cooking, "./cooking.json");
+getJson(survivalMethods, "./survivalMethods.json");
+getJson(doctors, "./doctor.json");
+getJson(tripsAndTravel, "./travele.json");
 
 
 

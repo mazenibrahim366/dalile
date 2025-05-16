@@ -38,6 +38,7 @@ font-weight: 800;
   background-size: cover;
 
 }
+
 #secHome::after{
   content: "";
   position: absolute;
@@ -489,6 +490,10 @@ margin-top: 10px;
 
 /* الشاشات الصغيرة مثل الهواتف */
 @media (max-width: 640px) {
+  #secHome a,p,h2 { 
+ color: #fff !important;
+
+}
   .card-img {
   
     object-fit: contain;
@@ -536,6 +541,10 @@ margin-top: 10px;
 
 /* الشاشات المتوسطة مثل التابلت */
 @media (min-width: 641px) and (max-width: 1023px) {
+  #secHome a,p,h2 { 
+ color: #fff !important;
+
+}
   nav .container {
     flex-direction: row;
     justify-content: space-between;

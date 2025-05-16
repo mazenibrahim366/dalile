@@ -490,7 +490,7 @@ margin-top: 10px;
 
 /* الشاشات الصغيرة مثل الهواتف */
 @media (max-width: 640px) {
-  #secHome a,p,h2 { 
+  #secHome .bot a, #secHome h2 { 
  color: #fff !important;
 
 }
@@ -541,7 +541,7 @@ margin-top: 10px;
 
 /* الشاشات المتوسطة مثل التابلت */
 @media (min-width: 641px) and (max-width: 1023px) {
-  #secHome a,p,h2 { 
+  #secHome > a,p,h2 { 
  color: #fff !important;
 
 }

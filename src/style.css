@@ -483,3 +483,75 @@ margin-top: 10px;
   text-align: center;
 }
 
+
+/* responsve */
+
+
+/* الشاشات الصغيرة مثل الهواتف */
+@media (max-width: 640px) {
+
+  .main-div-categories{
+
+    width: calc(100% );
+    padding: 30px 20px;
+  }
+  .input-form-search form {
+    padding: 0 1rem;
+  }
+
+  .input-form-search input[type="search"] {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  #default-tab {
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: auto;
+  }
+
+  section.footer ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  section.footer p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+/* الشاشات المتوسطة مثل التابلت */
+@media (min-width: 641px) and (max-width: 1023px) {
+  nav .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #default-tab {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .input-form-search input[type="search"] {
+    width: 80%;
+  }
+    .main-div-categories{
+
+    width: 50%;
+    padding: 30px 20px;
+  }
+}
+
+/* الشاشات الكبيرة (لا حاجة لتغيير كبير غالباً لكن للتأكيد) */
+@media (min-width: 1024px) {
+  .input-form-search input[type="search"] {
+    max-width: 500px;
+  }
+
+  section.footer ul {
+    justify-content: flex-start;
+  }
+}

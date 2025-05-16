@@ -44,7 +44,7 @@ font-weight: 800;
   inset: 0;
   background-color: black;
   opacity: .2;
-  z-index: 0;
+  z-index: -1;
 
 }
 .underline-before:hover::before{

@@ -35,7 +35,7 @@ async function getJson(element, jsonObject) {
 
 
     const divCategory = document.createElement("div");
-    divCategory.classList.add("main-div-categories", "bg-white", "border", "border-gray-200", "rounded-lg", "shadow-sm", "dark:bg-gray-800", "dark:border-gray-700");
+    divCategory.classList.add("main-div-categories", "bg-white", "border", "border-gray-200", "rounded-lg", "shadow-sm" );
 
     
     const img = document.createElement("img");
@@ -48,18 +48,18 @@ async function getJson(element, jsonObject) {
     const divContent = document.createElement("div");
 
     const title = document.createElement("h5");
-    title.classList.add("mb-2", "text-2xl", "font-bold", "tracking-tight", "text-gray-900", "dark:text-white");
+    title.classList.add("mb-2", "text-2xl", "font-bold", "tracking-tight", "text-gray-900");
     title.textContent = ele.name;
     divContent.appendChild(title);
 
     const description = document.createElement("p");
-    description.classList.add("mb-2", "font-normal", "text-gray-700", "dark:text-gray-400");
+    description.classList.add("mb-2", "font-normal", "text-gray-700");
     description.textContent = getFirst10Words(ele.des);
     divContent.appendChild(description);
 
     
     const button = document.createElement("button");
-    button.classList.add("flex", "items-center", "px-3", "py-2", "text-sm", "font-extralight", "text-center", "relative", "text-black", "underline-before2", "dark:bg-blue-600", "dark:hover:bg-blue-700", "dark:focus:ring-blue-800");
+    button.classList.add("flex", "items-center", "px-3", "py-2", "text-sm", "font-extralight", "text-center", "relative", "text-black", "underline-before2");
     button.textContent = "Read more";
 
 

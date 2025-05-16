@@ -489,7 +489,18 @@ margin-top: 10px;
 
 /* الشاشات الصغيرة مثل الهواتف */
 @media (max-width: 640px) {
+  .card-img {
+  
+    object-fit: contain;
+ 
+  }
+.hiddenDevData {
+    width: 90%;
+    padding-block: 10px;
+    position: absolute;
+            margin-top: 80px;
 
+}
   .main-div-categories{
 
     width: calc(100% );

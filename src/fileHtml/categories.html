@@ -11,8 +11,16 @@
 
 </head>
 <body>
+
+
+
   
-<!--open section navbar -->
+
+
+
+  <div class="lang-content lang-en ">
+
+
 <nav class="fixed z-50 w-full bg-white border-gray-200">
   <div class=" container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -40,12 +48,14 @@
         <li>
             <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact Us</a>
         </li>
+            <li>
+            <button class="lang-toggle-ar py-2 px-3 btn-translate text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">عربي</button>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 <!--close section navbar -->
-
 <!--open section categories -->
 <section id="secCategories" class=" ">
 
@@ -163,9 +173,175 @@
 
 </section>
 <!--close section footer -->
-<script src="../js.js"></script>
-<!-- <script src="/node_modules/flowbite/dist/flowbite.min.js"></script> -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+
+
+
+  </div>
+
+
+
+  <div class="lang-content lang-ar ">
+
+    <!--open section navbar -->
+    <nav class="fixed z-50 w-full bg-white border-gray-200">
+      <div class=" container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            
+            <span class="self-center text-2xl font-semibold whitespace-nowrap pe-2 ">دليلى</span>
+        </a>
+        <button id="btnMenuAr" data-collapse-toggle="navbar-default-ar" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default-ar" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div  class="hidden w-full md:block md:w-auto" id="navbar-default-ar">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white  ">
+            <li>
+              <a href="index.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">الصفحة الرئسية</a>
+            </li>
+    
+            <li>
+                <a href="categories.html"  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">فئات</a>
+            </li>
+            <li>
+                <a href="blog.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">مدونة</a>
+            </li>
+            <li>
+                <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">اتصل بنا</a>
+            </li>
+                <li>
+            <button  class="lang-toggle py-2 px-3 btn-translate text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">English</button>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--close section navbar -->
+    <!--open section categories -->
+    <section id="secCategories" class=" ">
+    
+      
+    
+    
+      <div class="mb-4 border-b border-gray-200 ">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+            <li class="me-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="FoodReviewerAr-tab" data-tabs-target="#FoodReviewerAr" type="button" role="tab" aria-controls="FoodReviewerAr" aria-selected="false"> مراجع طعام</button>
+            </li>
+            <li class="me-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="clothesAr-tab" data-tabs-target="#clothesAr" type="button" role="tab" aria-controls="clothesAr" aria-selected="false">ملابس</button>
+            </li>
+            <li class="me-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="TechnologyAr-tab" data-tabs-target="#TechnologyAr" type="button" role="tab" aria-controls="TechnologyAr" aria-selected="false">تكنولوجيا</button>
+            </li>
+            <li class="me-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="tripsAndTravelAr-tab" data-tabs-target="#tripsAndTravelAr" type="button" role="tab" aria-controls="tripsAndTravelAr" aria-selected="false">الرحلات والسفر</button>
+            </li>
+            <li class="me-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="survivalMethodsAr-tab" data-tabs-target="#survivalMethodsAr" type="button" role="tab" aria-controls="survivalMethodsAr" aria-selected="false">أساليب البقاء</button>
+            </li>
+            <li class="me-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="CookingAr-tab" data-tabs-target="#CookingAr" type="button" role="tab" aria-controls="CookingAr" aria-selected="false">طبخ</button>
+            </li>
+            <li class="me-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 " id="doctorsAr-tab" data-tabs-target="#doctorsAr" type="button" role="tab" aria-controls="doctorsAr" aria-selected="false">الأطباء</button>
+            </li>
+    
+        </ul>
+    </div>
+    <div class="input-form-search">
+    
+    
+    
+      <form class="max-w-lg mx-auto">
+        <div class="flex">
+            <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only ">Your Email</label>
+            <div class="relative w-full">
+                <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg  border-s-1 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder="ابحث عن المؤثرين ومنشئي المحتوى ..."  />
+                <span type="" class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </span>
+              </div>
+            </div>
+            <ul id="results"></ul>
+    </form>
+    
+    
+    
+    </div>
+    <div id="default-tab-content bgHome">
+      
+        <div  class="hidden flex flex-wrap p-4 rounded-lg bg-gray-50" id="FoodReviewerAr" role="tabpanel" aria-labelledby="FoodReviewerAr-tab">
+    
+        </div>
+        <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50" id="clothesAr" role="tabpanel" aria-labelledby="clothesAr-tab">
+    
+        </div>
+        <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50" id="TechnologyAr" role="tabpanel" aria-labelledby="TechnologyAr-tab">
+    
+          </div>
+        <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50" id="tripsAndTravelAr" role="tabpanel" aria-labelledby="tripsAndTravelAr-tab">
+    
+          </div>
+        <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50" id="survivalMethodsAr" role="tabpanel" aria-labelledby="survivalMethodsAr-tab">
+    
+          </div>
+        <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50" id="CookingAr" role="tabpanel" aria-labelledby="CookingAr-tab">
+    
+          </div>
+        <div class="hidden  flex flex-wrap p-4 rounded-lg bg-gray-50" id="doctorsAr" role="tabpanel" aria-labelledby="doctorsAr-tab">
+    
+          </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    </section>
+    <!--close section categories -->
+    <!--start section footer -->
+    <section class="footer">
+      <div class="footer-img-links">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/?locale=ar_AR"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=ar"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.google.com.eg/?hl=ar"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+       <p>© 2025 لشركة  <span>MazenDev</span> جميع الحقوق محفوظة </p>
+    
+    </section>
+    <!--close section footer -->
+
+
+  </div>
+  <script src="../js.js"></script>
+  <!-- <script src="/node_modules/flowbite/dist/flowbite.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,8 @@
 
 const btnMenu = document.querySelector("#btnMenu");
+const btnMenuAr = document.querySelector("#btnMenuAr")
 const divMenu = document.querySelector("#navbar-default");
+const divMenuAr = document.querySelector("#navbar-default-ar");
 const foodReviewer = document.querySelector("#FoodReviewer");
 const clothes = document.querySelector("#clothes");
 const technology = document.querySelector("#Technology");
@@ -8,11 +10,72 @@ const tripsAndTravel = document.querySelector("#tripsAndTravel");
 const survivalMethods = document.querySelector("#survivalMethods");
 const cooking = document.querySelector("#Cooking");
 const doctors = document.querySelector("#doctors");
+const foodReviewerAr = document.querySelector("#FoodReviewerAr");
+const clothesAr = document.querySelector("#clothesAr");
+const technologyAr = document.querySelector("#TechnologyAr");
+const tripsAndTravelAr = document.querySelector("#tripsAndTravelAr");
+const survivalMethodsAr = document.querySelector("#survivalMethodsAr");
+const cookingAr = document.querySelector("#CookingAr");
+const doctorsAr = document.querySelector("#doctorsAr");
 const searchDropdown = document.getElementById('search-dropdown')
 const resultsContainer = document.getElementById('results');
 const  hiddenDevDetails=document.createElement("div");
 const  hiddenDevData=document.createElement("div");
-  
+const toggleBtn = document.querySelector('.lang-toggle');
+const toggleBtnAr = document.querySelector('.lang-toggle-ar');
+const arContent = document.querySelector('.lang-ar');
+const enContent = document.querySelector('.lang-en');
+    let currentLang = 'ar';
+    btnMenuAr?.addEventListener("click", () => {
+        divMenuAr.classList.toggle("hidden");
+    });
+btnMenu?.addEventListener("click", () => {
+    divMenu.classList.toggle("hidden");
+});
+
+    toggleBtn?.addEventListener('click', () => {
+      if (currentLang === 'ar') {
+        arContent.style.display = 'none';
+        enContent.style.display = 'block';
+        document.body.style.direction = 'ltr';
+        document.body.style.textAlign = 'left';
+        toggleBtn.textContent = 'عربي';
+        currentLang = 'en';
+      } else {
+        arContent.style.display = 'block';
+        enContent.style.display = 'none';
+        document.body.style.direction = 'rtl';
+        document.body.style.textAlign = 'right';
+        toggleBtn.textContent = 'English';
+        currentLang = 'ar';
+      }
+    });
+    toggleBtnAr?.addEventListener('click', () => {
+      if (currentLang === 'ar') {
+        arContent.style.display = 'none';
+        enContent.style.display = 'block';
+        document.body.style.direction = 'ltr';
+        document.body.style.textAlign = 'left';
+        // toggleBtnAr.textContent = 'عربي';
+        currentLang = 'en';
+      } else {
+        arContent.style.display = 'block';
+        enContent.style.display = 'none';
+        document.body.style.direction = 'rtl';
+        document.body.style.textAlign = 'right';
+        toggleBtn.textContent = 'English';
+        currentLang = 'ar';
+      }
+    });
+
+    // // تأكد إن اللغة العربية تظهر أولاً
+    window.onload = () => {
+      arContent.style.display = 'block';
+      enContent.style.display = 'none';
+    };
+
+
+
 let storage =[]
 function getFirst10Words(text) {
     const words = text.trim().split(/\s+/); 
@@ -20,9 +83,6 @@ function getFirst10Words(text) {
     return first.join(' '); }
   
 
-btnMenu.addEventListener("click", () => {
-    divMenu.classList.toggle("hidden");
-});
 
     
 async function getJson(element, jsonObject) {
@@ -79,7 +139,7 @@ async function getJson(element, jsonObject) {
     button.appendChild(svg);
     divContent.appendChild(button);
     divCategory.appendChild(divContent);
-    element.appendChild(divCategory);
+    element?.appendChild(divCategory);
 
 
 
@@ -172,7 +232,7 @@ async function getData() {
 
   for (const file of files) {
     const data = await fetchJson(file);
-    allData.push(...data); // دمج جميع البيانات في مصفوفة واحدة
+    allData?.push(...data); // دمج جميع البيانات في مصفوفة واحدة
   }
 
    allData; // حفظ في المتغير العالمي
@@ -188,7 +248,7 @@ async function getData() {
 
 hiddenDevDetails.classList.add("remove","hiddenDevDetails")
 hiddenDevDetails.addEventListener("click", (e) => { hiddenDevDetails.classList.add("remove"); hiddenDevData.classList.add("remove") })
-searchDropdown.addEventListener('input', function(element) {
+searchDropdown?.addEventListener('input', function(element) {
   const searchValue = this.value.toLowerCase();
   const filtered = allData.filter(item => item.name.toLowerCase().includes(searchValue));
 
@@ -250,12 +310,20 @@ getJson(survivalMethods, "./survivalMethods.json");
 getJson(doctors, "./doctor.json");
 getJson(tripsAndTravel, "./travele.json");
 
+getJson(foodReviewerAr, "./foodRiv.json");
+getJson(clothesAr, "./clothes.json");
+getJson(technologyAr, "./technology.json");
+getJson(cookingAr, "./cooking.json");
+getJson(survivalMethodsAr, "./survivalMethods.json");
+getJson(doctorsAr, "./doctor.json");
+getJson(tripsAndTravelAr, "./travele.json");
+
 
 
 
 // send data Us contact api 
  
-document.getElementById('myForm').addEventListener('submit', function(e) {
+document.getElementById('myForm')?.addEventListener('submit', function(e) {
   e.preventDefault();
   
   const formData = {
@@ -281,3 +349,7 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
     alert('حدث خطأ أثناء الإرسال: ' + err.message);
   });
 });
+
+
+
+

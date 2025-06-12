@@ -1,7 +1,3 @@
-
-
-
-
 <!doctype html>
 <html>
 <head>
@@ -14,7 +10,116 @@
 
 
 </head>
-<body>
+<body id="contactUs" class="bgHome">
+
+
+  <div class="wave wave-left">
+    <svg viewBox="0 0 200 800" preserveAspectRatio="none">
+      <path d="M0,0 C100,200 100,600 0,800 L200,800 L200,0 Z" fill="#4fc3f7"/>
+    </svg>
+  </div>
+
+  <div class="wave wave-right">
+    <svg viewBox="0 0 200 800" preserveAspectRatio="none">
+      <path d="M0,0 C100,200 100,600 0,800 L200,800 L200,0 Z" fill="#4fc3f7"/>
+    </svg>
+  </div>
+
+
+   <div class="lang-content lang-ar ">
+
+<!--open section navbar -->
+<nav class="fixed z-50 w-full bg-white border-gray-200 ">
+  <div class=" container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        
+        <span class="self-center text-2xl font-semibold whitespace-nowrap pe-2 ">دليلى</span>
+    </a>
+    <button id="btnMenuAr" data-collapse-toggle="navbar-default-ar" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default-ar" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div  class="hidden w-full md:block md:w-auto" id="navbar-default-ar">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
+        <li>
+          <a href="index.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">الصفحة الرئسية</a>
+        </li>
+        <li>
+            <a href="categories.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 " >فئات</a>
+        </li>
+        <li>
+            <a href="blog.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">مدونة</a>
+        </li>
+        <li>
+            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page" >اتصل بنا</a>
+        </li>
+                    <li>
+            <button  class=" lang-toggle block py-2 px-3 btn-translate text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">English</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--close section navbar -->
+
+<!--open section contact -->
+<section id="secContact" class="">
+  <div class="head-title my-10">
+    <h3 class="">اتصل بنا</h3>
+  </div>
+  <div class="flex items-center justify-center">
+    <form id="myForm">
+      <div class=" flex ">
+        <input class="w-1/2  me-2 " type="text" name="name" placeholder="الاسم" required>
+        <input class="w-1/2  "type="email" name="email" placeholder="البريد الإلكتروني" required>
+      </div>
+      <input class="w-full" type="text" name="subject" placeholder="الموضوع" required />
+      <textarea class="w-full "name="message" placeholder="محتوي الرسالة.............. " required></textarea>
+      <button  type="submit">إرسال الرسالة</button>
+    </form>
+  </div>
+
+</section>
+<!--close section contact -->
+<!--start section footer -->
+<section class="footer">
+  <div class="footer-img-links">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/?locale=ar_AR"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/?lang=ar"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.google.com.eg/?hl=ar"
+            ><i class="fa-brands fa-google"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <p>© 2025 لشركة  <span>MazenDev</span> جميع الحقوق محفوظة </p>
+
+</section>
+<!--close section footer -->
+
+
+
+   </div>
+
+<div class="lang-content lang-en ">
+
 <!--open section navbar -->
 <nav class="fixed z-50 w-full bg-white border-gray-200 ">
   <div class=" container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -41,6 +146,9 @@
         </li>
         <li>
             <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page" >Contact Us</a>
+        </li>
+                            <li>
+            <button  class=" lang-toggle-ar block py-2 px-3 btn-translate text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">عربي</button>
         </li>
       </ul>
     </div>
@@ -97,6 +205,10 @@
 
 </section>
 <!--close section footer -->
+
+
+
+</div>
 <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 <script src="../js.js"></script>
 

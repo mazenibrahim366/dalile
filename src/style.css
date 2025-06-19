@@ -362,7 +362,7 @@ padding: 0 25px;
 .fa-star{
   color: rgb(255, 187, 0);
 }
-#results li {
+.results li {
 
 background-color: #eee;
 padding: 10px;
@@ -370,7 +370,19 @@ border-bottom: #1e1e1e35 solid 2px;
 
 border-radius: 5px;
 }
-#results li:first-of-type {
+.results li:first-of-type {
+margin-top: 10px;
+
+}
+.resultsAr li {
+
+background-color: #eee;
+padding: 10px;
+border-bottom: #1e1e1e35 solid 2px;
+
+border-radius: 5px;
+}
+.resultsAr li:first-of-type {
 margin-top: 10px;
 
 }

@@ -17,8 +17,10 @@ const tripsAndTravelAr = document.querySelector("#tripsAndTravelAr");
 const survivalMethodsAr = document.querySelector("#survivalMethodsAr");
 const cookingAr = document.querySelector("#CookingAr");
 const doctorsAr = document.querySelector("#doctorsAr");
-const searchDropdown = document.getElementById('search-dropdown')
-const resultsContainer = document.getElementById('results');
+const searchDropdown = document.querySelector('#search-dropdown')
+const searchDropdownAR = document.querySelector('#search-dropdownAR')
+const resultsContainer = document.querySelector('.results');
+const resultsContainerAr = document.querySelector('.resultsAr');
 const  hiddenDevDetails=document.createElement("div");
 const  hiddenDevData=document.createElement("div");
 const toggleBtn = document.querySelector('.lang-toggle');
@@ -217,7 +219,7 @@ async function fetchJson(url) {
   }
 }
 
-async function getData() {
+async function getData(e,result) {
   const files = [
     "./foodRiv.json",
     "./technology.json",
@@ -236,7 +238,7 @@ async function getData() {
   }
 
    allData; // حفظ في المتغير العالمي
-  console.log("📦 Data Loaded into 'storage':", allData);
+  // console.log("📦 Data Loaded into 'storage':", allData);
 
 
 
@@ -248,14 +250,17 @@ async function getData() {
 
 hiddenDevDetails.classList.add("remove","hiddenDevDetails")
 hiddenDevDetails.addEventListener("click", (e) => { hiddenDevDetails.classList.add("remove"); hiddenDevData.classList.add("remove") })
-searchDropdown?.addEventListener('input', function(element) {
+
+e.addEventListener('input', function(element) {
+  
   const searchValue = this.value.toLowerCase();
+  
+  
   const filtered = allData.filter(item => item.name.toLowerCase().includes(searchValue));
 
   // عرض النتائج
-
-  const resultsContainer = document.getElementById('results');
-  resultsContainer.innerHTML = '';
+console.log(searchValue);
+  result.innerHTML = '';
   filtered.forEach(item => {
   const li = document.createElement('li');
   li.textContent = item.name;
@@ -291,12 +296,13 @@ searchDropdown?.addEventListener('input', function(element) {
           
   });
   console.log(element.target.value);
-  element.target.value?resultsContainer.appendChild(li):resultsContainer.innerHTML=""
+  element.target.value?result.appendChild(li):result.innerHTML=""
   
   });
 });
 }
-getData()
+getData(searchDropdown,resultsContainer)
+getData(searchDropdownAR,resultsContainerAr)
 
 
 
